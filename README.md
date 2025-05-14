@@ -27,7 +27,7 @@ projeto-chapas-aco/
 │   └── bootcamp_test.csv
 │
 ├── notebooks/              # Análises e exploração inicial 
-│   └── exploracao_inicial.ipynb
+│   └── projeto_classificacao_defeitos__PAULO_GASPAR.ipynb
 │
 ├── requirements.txt        # Dependências do projeto
 ├── README.md               # Este arquivo
