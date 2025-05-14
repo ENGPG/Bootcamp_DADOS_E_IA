@@ -22,11 +22,11 @@ projeto-chapas-aco/
 │   ├── modelo_otimizado.pkl
 │   └── label_encoder.pkl
 │
-├── data/                   # Dados utilizados no projeto (não subir o .test se for privado)
+├── data/                   # Dados utilizados no projeto 
 │   ├── bootcamp_train.csv
 │   └── bootcamp_test.csv
 │
-├── notebooks/              # Análises e exploração inicial (opcional)
+├── notebooks/              # Análises e exploração inicial 
 │   └── exploracao_inicial.ipynb
 │
 ├── requirements.txt        # Dependências do projeto
