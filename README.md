@@ -3,10 +3,13 @@
 ## Estrutura
 
 ```
-📁 data/         -> Dados originais
-📁 notebooks/    -> Análise e modelagem
-📁 src/          -> Scripts: pré-processamento, treino, API
+📁 data/         -> Dados originais (Bootcamp_train.csv, Bootcamp_test.csv)
+📁 notebooks/    -> Análise exploratória e modelagem (Jupyter Notebooks)
+📁 src/          -> Scripts principais: pré-processamento, treino, avaliação
 📁 models/       -> Modelos treinados (.joblib)
+📁 api/          -> Interface de inferência com FastAPI (opcional)
+
+
 ```
 
 
