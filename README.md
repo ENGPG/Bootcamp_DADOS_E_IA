@@ -7,7 +7,6 @@
 📁 notebooks/    -> Análise exploratória e modelagem (Jupyter Notebooks)
 📁 src/          -> Scripts principais: pré-processamento, treino, avaliação
 📁 models/       -> Modelos treinados (.joblib)
-📁 api/          -> Interface de inferência com FastAPI (opcional)
 
 
 ```
