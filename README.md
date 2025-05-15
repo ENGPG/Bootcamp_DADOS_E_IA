@@ -12,8 +12,12 @@ projeto-chapas-aco/
 │   ├── evaluation.py       # Avaliação e métricas dos modelos
 │   └── utils.py            # Funções auxiliares (ex: conversão binária)
 │
-├── app/                    # API com FastAPI (extra)
+├── api_fastapi_docker/                    # API com FastAPI (extra)
 │   └── main.py
+│   └──modelo_otimizado.pkl
+│   └──label_encoder.pkl
+│   └──requirements.txt
+│   └──Dockerfile
 │
 ├── dashboard/              # Dashboard Streamlit (extra)
 │   └── app.py
@@ -26,7 +30,7 @@ projeto-chapas-aco/
 │   ├── bootcamp_train.csv
 │   └── bootcamp_test.csv
 │
-├── notebooks/              # Análises e exploração inicial 
+├── notebook/              # Análises e exploração inicial 
 │   └── projeto_classificacao_defeitos__PAULO_GASPAR.ipynb
 │
 ├── requirements.txt        # Dependências do projeto
