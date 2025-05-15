@@ -3,6 +3,7 @@
 ## Estrutura
 
 ```
+📁 Slide/         -> arquivo de Apresentacao_Projeto_Chapas_Aco.pdf
 📁 data/         -> Dados originais (Bootcamp_train.csv, Bootcamp_test.csv)
 📁 notebooks/    -> Análise exploratória e modelagem (Jupyter Notebooks)
 📁 src/          -> Scripts principais: pré-processamento, treino, avaliação
