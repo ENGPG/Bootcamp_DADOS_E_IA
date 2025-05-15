@@ -1,87 +1,29 @@
-# Projeto: Classificação de Defeitos em Chapas de Aço Inoxidável
+# Projeto Final - Classificação de Defeitos em Chapas de Aço
 
-Este repositório contém o código, modelos e materiais desenvolvidos para o projeto final do Bootcamp de Ciência de Dados e IA, cujo objetivo é construir um sistema inteligente para detectar e classificar defeitos em chapas de aço inoxidável com base em dados extraídos de imagens.
-
-## Estrutura do Repositório
+## Estrutura
 
 ```
-projeto-chapas-aco/
-├── src/                     # Scripts principais do projeto
-│   ├── preprocessing.py    # Funções de tratamento e preparação dos dados
-│   ├── training.py         # Script de treino e validação dos modelos
-│   ├── evaluation.py       # Avaliação e métricas dos modelos
-│   └── utils.py            # Funções auxiliares (ex: conversão binária)
-│
-├── api_fastapi_docker/                    # API com FastAPI (extra)
-│   └── main.py
-│   └──modelo_otimizado.pkl
-│   └──label_encoder.pkl
-│   └──requirements.txt
-│   └──Dockerfile
-│
-├── dashboard/              # Dashboard Streamlit (extra)
-│   └── app.py
-│
-├── models/                 # Modelos treinados e serializados
-│   ├── modelo_otimizado.pkl
-│   └── label_encoder.pkl
-│
-├── data/                   # Dados utilizados no projeto 
-│   ├── bootcamp_train.csv
-│   └── bootcamp_test.csv
-│
-├── notebook/              # Análises e exploração inicial 
-│   └── projeto_classificacao_defeitos__PAULO_GASPAR.ipynb
-│
-├── requirements.txt        # Dependências do projeto
-├── README.md               # Este arquivo
-└── Apresentacao.pptx       # Slides da apresentação
+📁 data/         -> Dados originais
+📁 notebooks/    -> Análise e modelagem
+📁 src/          -> Scripts: pré-processamento, treino, API
+📁 models/       -> Modelos treinados (.joblib)
 ```
 
-## Objetivo
-Desenvolver um modelo de aprendizado de máquina capaz de identificar automaticamente o tipo de defeito presente em chapas de aço, com base em 31 variáveis extraídas das imagens (como área, perímetro, índices de luminosidade e geometria).
+## Como usar
 
-## Modelagem
-- Algoritmos testados: RandomForest, XGBoost
-- Técnicas usadas: SMOTE para balanceamento, GridSearchCV para tuning
-- Métrica principal: F1-score macro
+1. Edite e execute `src/train_model.py` para treinar o modelo.
+2. Use `src/predict.py` para fazer previsões.
+3. Rode a API com:
 
-## Resultado Final
-- Modelo final: **XGBoost**
-- F1-macro (validação cruzada): **0.674**
-
-## Extras
-- [x] Exportação do modelo com `joblib`
-- [x] Slides de apresentação
-- [ ] API REST com FastAPI
-- [ ] Dashboard interativo com Streamlit
-- [ ] Dockerização (em progresso)
-
-## Instalação
-Clone o repositório e instale as dependências:
 ```bash
-pip install -r requirements.txt
+uvicorn src.api:app --reload
 ```
 
-## Execução
-Execute o script de treino com:
-```bash
-python src/training.py
-```
+## Requisitos
 
-Para rodar a API:
-```bash
-uvicorn app.main:app --reload
-```
-
-Para abrir o dashboard:
-```bash
-streamlit run dashboard/app.py
-```
-
-## Contato
-Projeto desenvolvido por [PAULO FRANCISCO GASPAR].
-Entre em contato: paulogasparginga2018@gmail.com
-
----
-Bootcamp de Ciência de Dados e IA - SENAI | Maio/2025
+- Python 3.9+
+- scikit-learn
+- pandas
+- joblib
+- fastapi
+- uvicorn
